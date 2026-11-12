@@ -55,4 +55,59 @@ public class CampaignContribution {
         createdAt = LocalDateTime.now();
     }
 
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public Campaign getCampaign() {
+        return campaign;
+    }
+
+    public void setCampaign(Campaign campaign) {
+        this.campaign = campaign;
+    }
+
+    public User getContributor() {
+        return contributor;
+    }
+
+    public void setContributor(User contributor) {
+        this.contributor = contributor;
+    }
+
+    public WalletTransaction getWalletTransaction() {
+        return walletTransaction;
+    }
+
+    public void setWalletTransaction(WalletTransaction walletTransaction) {
+        this.walletTransaction = walletTransaction;
+    }
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
 }

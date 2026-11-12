@@ -4,6 +4,7 @@ import com.example.Sisonke.backend.contribution.entity.CampaignContribution;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public interface CampaignContributionRepository extends JpaRepository<CampaignContribution, UUID> {
@@ -17,4 +18,5 @@ public interface CampaignContributionRepository extends JpaRepository<CampaignCo
     );
 
     boolean existsByWalletTransaction_Id(UUID transactionId);
+    Optional<CampaignContribution> findByWalletTransaction_Id(UUID transactionId);
 }

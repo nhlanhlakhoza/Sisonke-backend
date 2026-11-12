@@ -152,5 +152,7 @@ public class WalletTransaction {
     public void setCompletedAt(LocalDateTime completedAt) {
         this.completedAt = completedAt;
     }
+
+
 }
 
