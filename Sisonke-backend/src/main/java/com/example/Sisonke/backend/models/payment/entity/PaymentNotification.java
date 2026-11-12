@@ -60,7 +60,8 @@ public class PaymentNotification {
     private LocalDateTime processedAt;
 
     // Store the verified/sanitised payload for audit purposes.
-    @Column(name = "payload", columnDefinition = "JSON")
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(nullable = false)
     private String payload;
 
     @PrePersist

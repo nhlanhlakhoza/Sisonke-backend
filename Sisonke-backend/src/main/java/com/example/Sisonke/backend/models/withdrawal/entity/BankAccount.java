@@ -33,8 +33,8 @@ public class BankAccount {
     private String accountHolder;
 
     // Must be encrypted by the application before persistence.
-    @Column(name = "account_number_encrypted",
-        nullable = false, columnDefinition = "TEXT")
+    @Lob
+    @Column(name = "account_number_encrypted", nullable = false)
     private String accountNumberEncrypted;
 
     @Column(name = "branch_code", length = 20)

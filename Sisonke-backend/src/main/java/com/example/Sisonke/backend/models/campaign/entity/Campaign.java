@@ -30,8 +30,10 @@ public class Campaign {
     @Column(nullable = false, length = 180)
     private String title;
 
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Lob
+    @Column(nullable = false)
     private String description;
+
 
     @Column(length = 50)
     private String category;
