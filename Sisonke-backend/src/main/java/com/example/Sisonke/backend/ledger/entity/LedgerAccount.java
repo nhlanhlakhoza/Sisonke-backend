@@ -50,4 +50,51 @@ public class LedgerAccount {
         createdAt = LocalDateTime.now();
     }
 
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public LedgerAccountType getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(LedgerAccountType accountType) {
+        this.accountType = accountType;
+    }
+
+    public User getOwner() {
+        return owner;
+    }
+
+    public void setOwner(User owner) {
+        this.owner = owner;
+    }
+
+    public UUID getCampaignId() {
+        return campaignId;
+    }
+
+    public void setCampaignId(UUID campaignId) {
+        this.campaignId = campaignId;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
 }
