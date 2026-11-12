@@ -1,6 +1,6 @@
 package com.example.Sisonke.backend.Repository;
 
-import com.example.Sisonke.backend.wallet.entity.Wallet;
+import com.example.Sisonke.backend.models.wallet.entity.Wallet;
 import jakarta.persistence.LockModeType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;

@@ -1,6 +1,6 @@
 package com.example.Sisonke.backend.Repository;
 
-import com.example.Sisonke.backend.payment.entity.Deposit;
+import com.example.Sisonke.backend.models.payment.entity.Deposit;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

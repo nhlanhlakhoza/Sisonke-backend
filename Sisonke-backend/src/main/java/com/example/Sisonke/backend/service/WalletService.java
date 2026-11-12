@@ -1,8 +1,8 @@
 package com.example.Sisonke.backend.service;
 
 import com.example.Sisonke.backend.Repository.WalletRepository;
-import com.example.Sisonke.backend.ledger.entity.LedgerAccount;
-import com.example.Sisonke.backend.wallet.entity.Wallet;
+import com.example.Sisonke.backend.models.ledger.entity.LedgerAccount;
+import com.example.Sisonke.backend.models.wallet.entity.Wallet;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

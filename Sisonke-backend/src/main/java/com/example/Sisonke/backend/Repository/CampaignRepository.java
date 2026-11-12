@@ -1,6 +1,6 @@
 package com.example.Sisonke.backend.Repository;
 
-import com.example.Sisonke.backend.campaign.entity.Campaign;
+import com.example.Sisonke.backend.models.campaign.entity.Campaign;
 import jakarta.persistence.LockModeType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;

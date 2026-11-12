@@ -1,6 +1,6 @@
 package com.example.Sisonke.backend.Repository;
 
-import com.example.Sisonke.backend.withdrawal.entity.BankAccount;
+import com.example.Sisonke.backend.models.withdrawal.entity.BankAccount;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

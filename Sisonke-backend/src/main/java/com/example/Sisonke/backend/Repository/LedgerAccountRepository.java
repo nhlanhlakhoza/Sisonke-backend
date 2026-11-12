@@ -1,7 +1,7 @@
 package com.example.Sisonke.backend.Repository;
 
-import com.example.Sisonke.backend.ledger.entity.LedgerAccount;
-import com.example.Sisonke.backend.ledger.enums.LedgerAccountType;
+import com.example.Sisonke.backend.models.ledger.entity.LedgerAccount;
+import com.example.Sisonke.backend.models.ledger.enums.LedgerAccountType;
 import jakarta.persistence.LockModeType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;

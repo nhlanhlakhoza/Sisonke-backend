@@ -1,13 +1,13 @@
 package com.example.Sisonke.backend.service;
 
 import com.example.Sisonke.backend.Repository.*;
-import com.example.Sisonke.backend.campaign.entity.Campaign;
-import com.example.Sisonke.backend.contribution.entity.CampaignContribution;
-import com.example.Sisonke.backend.ledger.entity.LedgerAccount;
-import com.example.Sisonke.backend.wallet.entity.Wallet;
-import com.example.Sisonke.backend.wallet.entity.WalletTransaction;
-import com.example.Sisonke.backend.wallet.enums.TransactionStatus;
-import com.example.Sisonke.backend.wallet.enums.TransactionType;
+import com.example.Sisonke.backend.models.campaign.entity.Campaign;
+import com.example.Sisonke.backend.models.contribution.entity.CampaignContribution;
+import com.example.Sisonke.backend.models.ledger.entity.LedgerAccount;
+import com.example.Sisonke.backend.models.wallet.entity.Wallet;
+import com.example.Sisonke.backend.models.wallet.entity.WalletTransaction;
+import com.example.Sisonke.backend.models.wallet.enums.TransactionStatus;
+import com.example.Sisonke.backend.models.wallet.enums.TransactionType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
