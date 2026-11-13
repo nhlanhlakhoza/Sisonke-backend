@@ -5,13 +5,16 @@ import com.example.Sisonke.backend.dto.request.LoginRequest;
 import com.example.Sisonke.backend.dto.request.RegisterRequest;
 import com.example.Sisonke.backend.dto.response.UserResponse;
 import com.example.Sisonke.backend.models.user.entity.User;
-import com.example.Sisonke.backend.service.JwtService;
+import com.example.Sisonke.backend.service.auth.JwtService;
 import com.example.Sisonke.backend.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/users")
@@ -85,5 +88,17 @@ public class UserController {
         );
 
         return ResponseEntity.ok(response);
+    }
+    @GetMapping("/me")
+    public Map<String, Object> getCurrentUser(
+        Authentication authentication
+    ) {
+        User user = (User) authentication.getPrincipal();
+
+        return Map.of(
+            "id", user.getId(),
+            "fullName", user.getFullName(),
+            "email", user.getEmail()
+        );
     }
 }

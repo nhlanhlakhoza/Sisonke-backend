@@ -13,20 +13,5 @@ import java.util.UUID;
 
 public interface LedgerAccountRepository extends JpaRepository<LedgerAccount, UUID> {
 
-    Optional<LedgerAccount> findByAccountTypeAndOwner_Id(
-        LedgerAccountType accountType,
-        UUID userId
-    );
 
-    Optional<LedgerAccount> findByCampaignId(UUID campaignId);
-
-    @Lock(LockModeType.PESSIMISTIC_WRITE)
-    @Query("""
-        SELECT a
-        FROM LedgerAccount a
-        WHERE a.id = :accountId
-    """)
-    Optional<LedgerAccount> findByIdForUpdate(
-        @Param("accountId") UUID accountId
-    );
 }

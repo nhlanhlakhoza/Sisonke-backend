@@ -1,5 +1,5 @@
 
-package com.example.Sisonke.backend.service;
+package com.example.Sisonke.backend.service.auth;
 
 import com.example.Sisonke.backend.models.user.entity.User;
 
